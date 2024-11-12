@@ -1,0 +1,160 @@
+body {
+  background-color: var(--light-grey);
+}
+
+.homepage {
+  position: absolute; /* To always position this at the top of the page */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 170px; /* To ensure this page always starts below the navbar and title banner */
+  z-index: 800;
+}
+
+.homepage .title-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--soft-green);
+  background-image: linear-gradient(to bottom, var(--soft-green), var(--gradient-green));
+  padding: 0 20px;
+  height: 90px;
+  color: var(--black);
+  z-index: 900;
+}
+
+.homepage .title-banner .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.homepage .row {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+}
+
+.homepage .row .column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage .row .column .textbox {
+  display: inline-block;
+  padding: 10px;
+  width: 240px;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 15px; /* Rounded corners for the title box */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.homepage .row .column .bar {
+  margin-top: 20px;
+  height: 8px;
+  width: 450px;
+  background-color: var(--black);
+}
+
+.homepage .row .column .feed-container {
+  margin-top: 20px;
+  padding: 15px;
+  color: var(--white);
+  background-color: var(--dark-grey-2);
+  width: 400px;
+  height: calc(100vh - 350px);
+  min-height: 300px;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.homepage .row .column .feed-container .post {
+  margin-bottom: 10px;
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  width: auto;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.homepage .row .column .feed-container .post .left-section {
+  align-items: center;
+  margin: 10px;
+}
+
+.homepage .row .column .feed-container .post .left-section .picture {
+  display: flex;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.homepage .row .column .feed-container .post .right-section * {
+  margin: 0;
+}
+
+.homepage .row .column .feed-container .post .right-section {
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.homepage .row .column .feed-container .post .right-section .row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.homepage .row .column .feed-container .post .right-section .row .name {
+  color: var(--primary-blue);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.homepage .row .column .feed-container .post .right-section .row .groupname {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.homepage .row .column .feed-container .post .right-section .row .time {
+  margin-left: auto;
+  color: var(--black);
+}
+
+.homepage .row .column .feed-container .post .right-section .row .line {
+  height: 4px;
+  width: 100%;
+  background-color: var(--black);
+}
+
+.homepage .row .column .feed-container .post .right-section .row .message {
+  font-weight: 500;
+}

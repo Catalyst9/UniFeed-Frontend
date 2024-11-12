@@ -1,0 +1,56 @@
+.opengroup {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: var(--dark-grey-2);
+  }
+  
+  .opengroup .tabs button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    margin-right: 5px;
+  }
+  
+  .opengroup .tabs button:hover {
+    background-color: var(--dark-blue);
+    color: white;
+  }
+  
+  .opengroup .content {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .opengroup .chat-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .opengroup .message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 60%;
+  }
+  
+  .opengroup .message.you {
+    align-self: flex-end;
+    background-color: lightblue;
+  }
+  
+  .opengroup .message.other {
+    align-self: flex-start;
+    background-color: lightgreen;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  

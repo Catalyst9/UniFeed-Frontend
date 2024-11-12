@@ -1,0 +1,73 @@
+/* Styles for the sidebar body */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  margin-top: 80px;
+  background-color: #3c3c3c;
+  color: white;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 15px;
+}
+
+.sidebar .top-container { /* Section for the groups, specifically the sub-groups */
+  background-color: #e6e6e6;
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 4px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.sidebar .title {
+  color: #282828;
+  font-size: 24px;
+  text-decoration: underline;
+  margin-bottom: 5px; /* Adjust spacing below title */
+}
+
+/* Navigation links container */
+.sidebar .nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .nav-links li {
+  margin: 2px 0; /* Vertical spacing between the links */
+}
+
+.sidebar .nav-links a {
+  text-decoration: none; /* Removes underline on the text */
+  color: #282828;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.sidebar .nav-links a.active { /* Sets colour of list element when active */
+  color: #0086e3;
+  font-weight: bold;
+}
+
+.sidebar .nav-links a:hover { /* Sets colour of list element when hovered over */
+  color: #0046a3;
+  background-color: #999999; /* Background highlight */
+}
+
+.sidebar .profile {
+  margin-top: auto; /* Pushes this to the bottom */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}

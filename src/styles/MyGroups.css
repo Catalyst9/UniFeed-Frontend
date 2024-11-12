@@ -1,0 +1,127 @@
+body {
+  background-color: var(--light-grey);
+}
+
+.mygroupspage {
+  position: absolute; /* To always position this at the top of the page */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 170px; /* To ensure this page always starts below the navbar and title banner */
+  z-index: 800;
+}
+
+.mygroupspage .title-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--soft-yellow);
+  background-image: linear-gradient(to bottom, var(--soft-yellow), var(--gradient-yellow));
+  padding: 0 20px;
+  height: 90px;
+  color: var(--black);
+  z-index: 900;
+}
+
+.mygroupspage .title-banner .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.mygroupspage .row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.mygroupspage .row .column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mygroupspage .row .column .textbox {
+  display: inline-block;
+  padding: 10px;
+  width: 160px;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 15px; /* Rounded corners for the title box */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mygroupspage .row .column .active {
+  color: var(--white);
+  background-color: var(--primary-blue);
+}
+
+.mygroupspage .row .column button:hover {
+  color: var(--black);
+  background-color: var(--light-blue);
+}
+
+.mygroupspage .row .bar {
+  height: 8px;
+  width: 860px;
+  background-color: var(--black);
+}
+
+.mygroupspage .row .groups-container {
+  margin-top: -20px;
+  padding: 15px;
+  color: var(--white);
+  width: 910px;
+  height: calc(100vh - 350px);
+  min-height: 300px;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.mygroupspage .row .groups-container .groups-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.mygroupspage .row .groups-container .groups-row .group {
+  margin: 10px;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 15px; /* Rounded corners for the title box */
+  width: 200px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.mygroupspage .row .groups-container .groups-row .group .top-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mygroupspage .row .groups-container .groups-row .group .top-section .logo{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+}

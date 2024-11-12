@@ -1,0 +1,95 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: white;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Colour Palette for the Website */
+:root {
+  /* The main greyscale colours used in the website */
+  --white: #FFFFFF;
+  --black: #000000;
+  --light-grey: #E6E6E6;
+  --dark-grey-1: #282828;
+  --dark-grey-2: #3C3C3C;
+
+  /* Blue is the primary colour used throughout the website, with a
+     darker blue used when hovering over components */
+  --primary-blue: #007BFF;
+  --dark-blue: #0056B3;
+  --light-blue: #DAE8FC;
+
+  /* Colours used to create the gradient effect for the title banners */
+  --soft-green: #D5E8D4;
+  --gradient-green: #97D077;
+  --soft-yellow: #FFF2CC;
+  --gradient-yellow: #FFD966;
+  --soft-pink: #E6D0DE;
+  --gradient-pink: #D5739D;
+  --soft-red: #F8CECC;
+  --gradient-red: #EA6B66;
+}

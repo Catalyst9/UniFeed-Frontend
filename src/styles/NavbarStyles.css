@@ -1,0 +1,184 @@
+body {
+  background-color: var(--light-grey);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-grey-1);
+  padding: 0 20px;
+  height: 80px;
+  color: var(--white);
+  z-index: 1000;
+}
+
+.navbar .left-section,
+.navbar .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .middle-section {
+  margin-left: 0px;
+  margin-right: 80px;
+}
+
+.navbar .logo {
+  height: 60px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.navbar .title {
+  margin-left: 10px;
+  color: var(--white);
+}
+
+.navbar .nav-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar .nav-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .nav-links li {
+  margin: 0 20px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none; /* Removes underline on the text */
+  color: var(--white);
+  font-size: 20px;
+}
+
+.navbar .nav-links a.active { /* Sets colour of list element when active */
+  color: var(--primary-blue);
+}
+
+.navbar .nav-links a:hover { /* Sets colour of list element when hovered over */
+  color: var(--dark-blue);
+}
+
+/* Profile section */
+.navbar .profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.navbar .profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.navbar .profile h2{
+  text-decoration: none; /* Removes underline on the text */
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar .profile img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15;
+}
+
+.navbar .profile .drop-down-wrap {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  width: 250px;
+  /* Max height of 0 coupled with the overflow being hidden
+     keeps the drop-down menu hidden, and when clicked, the
+     max height will be changed. */
+  max-height: 0px;
+  overflow: hidden;
+  /* To add a transition animation to make the menu look
+     like it actually drops down from the navbar. */
+  transition: max-height 0.7s;
+}
+
+.navbar .profile .drop-down-wrap.open-menu {
+  max-height: 400px;
+}
+
+.navbar .profile .drop-down {
+  background-color: var(--dark-grey-2);
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.navbar .profile .drop-down hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: var(--black);
+  margin: 5px 0;
+}
+
+.navbar .profile .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .profile .user-info img{
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.navbar .profile .drop-down-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 12px 0;
+}
+
+.navbar .profile .drop-down-link p {
+  width: 100%;
+  font-size: 15px;
+  color: var(--white);
+}
+
+.navbar .profile .drop-down-link:hover p {
+  font-weight: 600;
+}
+
+.navbar .profile .drop-down-link .icon {
+  width: 30px;
+  height: 30px;
+  color: var(--white);
+  margin-right: 10px;
+}
+
+.navbar .profile .drop-down-link span {
+  font-size: 22px;
+  color: var(--white);
+  transition: transform 0.5s;
+}
+
+.navbar .profile .drop-down-link span {
+  font-size: 22px;
+}
+
+.navbar .profile .drop-down-link:hover span {
+  transform: translateX(5px);
+}
